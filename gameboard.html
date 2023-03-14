@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game board</title>
+    <link rel="stylesheet" href="./gameboardStyle.css" />
+
+</head>
+
+<body>
+    <div class="gamestopped">
+        <h2>Player X Wins</h2>
+        <div>
+            <button id="replay" onclick="window.location.href='/gameboard.html'">
+                Play Again
+            </button>
+
+            <button id="quit" onclick="window.location.href='/index.html'">
+                Quit
+            </button>
+        </div>
+    </div>
+    <div class="scroreboard">
+        <p class="score">HARSHAL - 3 </p>
+        <p class="score">VIRAJ - 0 </p>
+    </div>
+    <h1>TURN - Harshal X</h1>
+    <div class="gameboard">
+        <div class="gameboardrow">
+            <div class="box" id="box1" onclick="btnpressed('box1')"></div>
+
+            <div class="vr"></div>
+            <div class="box" id="box2" onclick="btnpressed('box2')"></div>
+            <div class="vr"></div>
+            <div class="box" id="box3" onclick="btnpressed('box3')"></div>
+        </div>
+        <div class="hr"></div>
+        <div class="gameboardrow">
+            <div class="box" id="box4" onclick="btnpressed('box4')"></div>
+            <div class="vr"></div>
+            <div class="box" id="box5" onclick="btnpressed('box5')"></div>
+            <div class="vr"></div>
+            <div class="box" id="box6" onclick="btnpressed('box6')"></div>
+        </div>
+        <div class="hr"></div>
+        <div class="gameboardrow">
+            <div class="box" id="box7" onclick="btnpressed('box7')"></div>
+            <div class="vr"></div>
+            <div class="box" id="box8" onclick="btnpressed('box8')"></div>
+            <div class="vr"></div>
+            <div class="box" id="box9" onclick="btnpressed('box9')"></div>
+        </div>
+    </div>
+
+    <div class="bottombtns">
+        <button class="btn" id="newgame" onclick="window.location.href='/index.html'">Quit</button>
+        <button class="btn" id="reset" onclick="window.location.href='/gameboard.html'">Reset</button>
+    </div>
+</body>
+<script src="./gameboard.js"></script>
+
+</html>
